@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free robux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+        header {
+            background-color: #0055ff;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        form {
+            background-color: white;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #0055ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0041cc;
+        }
+        #readyButton {
+            display: none;
+            margin-top: 15px;
+            animation: fadeInScale 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Free robux</h1>
+    </header>
+    <main>
+        <form id="usernameForm" onsubmit="handleFormSubmit(event)">
+            <label for="username">Enter your Roblox Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your Roblox username" required>
+            <button type="submit">Submit</button>
+        </form>
+        <button id="readyButton" onclick="window.open('https://discord.gg/Prztr7XSwg', '_blank')">
+            Claim
+        </button>
+    </main>
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+            const readyButton = document.getElementById('readyButton');
+            readyButton.style.display = 'inline-block'; // Show the "Ready?" button
+        }
+    </script>
+</body>
+</html>
